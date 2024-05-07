@@ -1,0 +1,126 @@
+
+/*Generales*/
+
+* {
+
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif
+    }
+      
+      h1{
+        font-family: "Pinyon Script";
+        font-size: 72px;
+      }
+    p, a, h2, h3, h4, ul, li, legend, label, input, button{
+        font-family: "raleway";
+    }
+    
+    .container {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    h1::selection{
+        background-color: crimson;
+    }
+    a::selection{
+        background-color: crimson;
+    }
+    p::selection{
+        background-color: crimson;
+    }
+    
+    /*-------------------------------------------------- */
+    
+    /*HEADER*/
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        border-radius: 999px;
+    }
+    
+    .menu {
+        list-style-type: none;
+        color: black;
+    }
+    
+    .menu li {
+        display: inline;
+    
+    }
+    .menu a{
+        padding: 10px;
+    }
+    
+    a:hover{
+        color: crimson;
+        background-color: #f5daca;
+        border-radius: 10px;
+    
+    }
+    
+    /* END HEADER*/
+    
+    /*-------------------------------------------------- */
+    
+    /*MAIN*/
+    
+    .main {
+        padding: 10px;
+        background-color: #f5daca;
+    
+    }
+    .main h1{
+        text-align: center;
+    }
+    
+    .main_container{
+        margin-bottom: -10rem;
+    }
+
+    
+    /* END MAIN*/
+    
+    /*-------------------------------------------------- */
+    
+    /*FOOTER*/
+    footer{ /*Al padre le doy display:flex*/
+        color:rgb(66, 66, 58) ;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;   
+    }
+    
+    footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+        font-size: 1.5em ;
+    }
+    
+    footer .redes i{ /*cambio el color de los iconos redes*/
+       color:rgb(145, 99, 134);
+    
+       transition: 0.2 all;
+    }
+    footer .redes i:hover{
+        color: rgb(110, 110, 92);
+    }
+    
+    /* END FOOTER*/
